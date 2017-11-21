@@ -1,0 +1,22 @@
+﻿<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet" />
+        <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <title>Introduction to AngularJS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+       
+        <article ng-app="my-module">
+            <section ng-controller="my-root-controller">
+                <h2 ng-repeat="item in players">{{item.FirstName + ' ' + item.LastName}}</h2>
+            </section>
+        </article>         
+</body>
+
+</html>
